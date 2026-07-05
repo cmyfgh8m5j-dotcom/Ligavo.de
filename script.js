@@ -176,6 +176,14 @@ if (demoBody) {
 // Signup form -> mailto (no backend yet)
 const signupForm = document.getElementById('signupForm');
 if (signupForm) {
+  const fCompanyField = document.getElementById('fCompanyField');
+  const toggleCompanyField = () => {
+    const role = signupForm.querySelector('input[name="role"]:checked').value;
+    fCompanyField.style.display = role === 'Bauherr' ? 'none' : '';
+  };
+  signupForm.querySelectorAll('input[name="role"]').forEach((r) => r.addEventListener('change', toggleCompanyField));
+  toggleCompanyField();
+
   signupForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const role = signupForm.querySelector('input[name="role"]:checked').value;
