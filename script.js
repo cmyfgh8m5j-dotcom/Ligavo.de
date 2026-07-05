@@ -115,9 +115,9 @@ if (demoBody) {
     card.className = 'demo-result';
     card.innerHTML = `
       <span class="demo-result-label">3 passende Betriebe · Hamburg-Altona</span>
-      <div class="demo-result-row"><span>Meier &amp; Heinz GmbH</span><b>★★★★★</b></div>
-      <div class="demo-result-row"><span>ProFix Handwerk</span><b>★★★★☆</b></div>
-      <div class="demo-result-row"><span>Schmidt &amp; Kollegen</span><b>★★★★☆</b></div>
+      <div class="demo-result-row"><span>Fliesen-Fachbetrieb</span><b>★★★★★</b></div>
+      <div class="demo-result-row"><span>Sanitär-Meisterbetrieb</span><b>★★★★☆</b></div>
+      <div class="demo-result-row"><span>Bad-Sanierung Spezialist</span><b>★★★★☆</b></div>
       <div class="demo-result-cost"><span>Geschätzte Kosten</span><b>3.800 – 6.200&nbsp;€</b></div>
     `;
     demoBody.appendChild(card);
@@ -170,7 +170,7 @@ if (demoBody) {
       else demoRunId++;
     });
   }, { threshold: 0.35 });
-  demoObserver.observe(demoBody.closest('.demo-chat'));
+  demoObserver.observe(demoBody.closest('.demo-chat-wrap'));
 }
 
 // Signup form -> mailto (no backend yet)
@@ -184,7 +184,7 @@ if (signupForm) {
     const email = signupForm.fEmail.value.trim();
     const message = signupForm.fMessage.value.trim();
 
-    const to = role === 'Handwerksbetrieb' ? 'betriebe@ligavo.de' : 'info@ligavo.de';
+    const to = 'info@ligavo.de';
     const subject = `Interesse als ${role} — ${name}`;
     const bodyLines = [
       `Ich bin: ${role}`,

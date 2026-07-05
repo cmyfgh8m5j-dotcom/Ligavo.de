@@ -19,7 +19,7 @@ Dann `http://localhost:8000` öffnen. Alternativ `index.html` direkt per Doppelk
 
 1. **Impressum & Datenschutz ausfüllen.** Beide Seiten sind bewusst als Platzhalter markiert (rot hinterlegter Warnhinweis) — Firmenname/Rechtsform, Anschrift, Registereintrag etc. fehlen noch. Das ist in Deutschland Pflicht (§ 5 TMG), bitte nicht ohne diese Angaben live schalten.
 2. **Kontaktformular.** Das Formular am Ende der Seite baut aktuell einen `mailto:`-Link (öffnet das lokale Mailprogramm) — es gibt noch kein Backend. Funktioniert zuverlässig, ist aber kein Ersatz für ein echtes Formular/CRM, sobald mehr Volumen reinkommt.
-3. **E-Mail-Adressen prüfen.** Die Seite verlinkt auf `info@ligavo.de` und `betriebe@ligavo.de` — bitte sicherstellen, dass beide Postfächer eingerichtet sind.
+3. **E-Mail-Adresse prüfen.** Die Seite verlinkt auf `info@ligavo.de` — bitte sicherstellen, dass das Postfach eingerichtet ist.
 
 ## Deployment auf ligavo.de (IONOS)
 

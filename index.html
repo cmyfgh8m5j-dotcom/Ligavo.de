@@ -105,30 +105,56 @@
 
 <!-- ============================== LIVE DEMO CHAT ============================== -->
 <section id="demo" class="demo-section">
-  <svg class="hero-lines" viewBox="0 0 1440 800" preserveAspectRatio="none" aria-hidden="true">
-    <line x1="-100" y1="100" x2="700" y2="900" stroke="#c9633f" stroke-width="1.5" stroke-dasharray="2 10" stroke-linecap="round"/>
-  </svg>
-  <div class="container">
-    <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+  <div class="demo-bg" style="background-image:url('assets/photos/tischler.jpg');"></div>
+  <div class="container demo-container">
+    <div class="section-head center reveal" style="margin:0 auto 48px;">
       <span class="eyebrow">Live-Demo</span>
       <h2 style="color:var(--cream);">Vom ersten Anliegen zum passenden Betrieb.</h2>
       <p style="color:var(--cream-muted);">So läuft eine echte Anfrage über den Ligavo-Assistenten ab — automatisch nachgespielt.</p>
     </div>
 
     <div class="demo-chat-wrap reveal">
-      <div class="demo-chat">
-        <div class="demo-chat-head">
-          <div class="demo-chat-avatar">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 3.2v2.1M12 18.7v2.1M4.9 4.9l1.5 1.5M17.6 17.6l1.5 1.5M3.2 12h2.1M18.7 12h2.1M4.9 19.1l1.5-1.5M17.6 6.4l1.5-1.5"/></svg>
-          </div>
-          <div>
-            <b>Ligavo-Assistent</b>
-            <span class="demo-chat-status"><i></i> online</span>
-          </div>
+      <div class="demo-chat-head">
+        <div class="demo-chat-avatar">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 3.2v2.1M12 18.7v2.1M4.9 4.9l1.5 1.5M17.6 17.6l1.5 1.5M3.2 12h2.1M18.7 12h2.1M4.9 19.1l1.5-1.5M17.6 6.4l1.5-1.5"/></svg>
         </div>
-        <div class="demo-chat-body" id="demoChatBody"></div>
+        <div>
+          <b>Ligavo-Assistent</b>
+          <span class="demo-chat-status"><i></i> online</span>
+        </div>
       </div>
+      <div class="demo-chat-body" id="demoChatBody"></div>
     </div>
+  </div>
+</section>
+
+<!-- ============================== HANDWERK GALERIE ============================== -->
+<section id="handwerk-galerie">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Handwerk in Aktion</span>
+      <h2>Vier Gewerke, ein Marktplatz.</h2>
+      <p>Von der Werkstatt bis zur Baustelle — Ligavo deckt die Gewerke ab, die in Ihrer Region gefragt sind.</p>
+    </div>
+    <div class="photo-grid">
+      <figure class="photo-card">
+        <img src="assets/photos/tischler.jpg" alt="Tischler bearbeitet Holz in der Werkstatt" loading="lazy">
+        <figcaption>Tischler &amp; Holzbau</figcaption>
+      </figure>
+      <figure class="photo-card">
+        <img src="assets/photos/fliesen.jpg" alt="Fliesenleger verlegt Wandfliesen" loading="lazy">
+        <figcaption>Fliesen &amp; Bad</figcaption>
+      </figure>
+      <figure class="photo-card">
+        <img src="assets/photos/sanitaer.jpg" alt="Sanitär-Installationsmaterial" loading="lazy">
+        <figcaption>Sanitär &amp; Heizung</figcaption>
+      </figure>
+      <figure class="photo-card">
+        <img src="assets/photos/dach.jpg" alt="Dachdecker bei der Dacharbeit" loading="lazy">
+        <figcaption>Dach &amp; Außenbau</figcaption>
+      </figure>
+    </div>
+    <p class="photo-credits">Fotos: Wikimedia Commons, CC BY-SA / CC BY — Platzhalter bis eigenes Bildmaterial vorliegt.</p>
   </div>
 </section>
 
@@ -327,8 +353,7 @@
       <h2>Werden Sie Gründungspartner in Ihrer Region.</h2>
       <p>Wir starten je Region mit einer begrenzten Zahl an Betrieben — die ersten sichern sich die meisten Anfragen. Jetzt kostenlos registrieren: keine Vertragsbindung, jederzeit kündbar, kein Risiko.</p>
       <div id="bauherren" class="contact-line">
-        Sie suchen einen Handwerksbetrieb? Schreiben Sie uns: <a href="mailto:info@ligavo.de">info@ligavo.de</a><br>
-        Sie sind ein Handwerksbetrieb? <a href="mailto:betriebe@ligavo.de">betriebe@ligavo.de</a>
+        Schreiben Sie uns direkt: <a href="mailto:info@ligavo.de">info@ligavo.de</a>
       </div>
     </div>
 
@@ -394,7 +419,6 @@
         <h5>Kontakt</h5>
         <ul>
           <li><a href="mailto:info@ligavo.de">info@ligavo.de</a></li>
-          <li><a href="mailto:betriebe@ligavo.de">betriebe@ligavo.de</a></li>
           <li>Hamburg · Schleswig-Holstein</li>
         </ul>
       </div>
