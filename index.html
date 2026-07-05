@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ligavo — Verbindung zwischen Mensch und Handwerk</title>
+<meta name="description" content="Ligavo ist der regionale Marktplatz, der Bauherren mit dem passenden Handwerksbetrieb zusammenbringt. Faire Erfolgsprovision, keine Vorkosten, kein Abo. Jetzt in Hamburg &amp; Schleswig-Holstein.">
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700;800;900&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============================== NAV ============================== -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <img src="assets/logo-lockup-dark.png" alt="Ligavo" style="height:22px;">
+    </a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#funktioniert">So funktioniert's</a></li>
+        <li><a href="#betriebe">Für Handwerksbetriebe</a></li>
+        <li><a href="#preismodell">Preismodell</a></li>
+        <li><a href="#ueber-uns">Über uns</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <a href="#einstieg" class="btn btn-outline btn-sm">Kontakt</a>
+      <a href="#einstieg" class="btn btn-dark btn-sm">Gründungspartner werden</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============================== HERO ============================== -->
+<section class="hero" id="top">
+  <div class="container hero-grid">
+    <div class="hero-copy reveal in">
+      <div class="badge badge-dark hero-badge"><span class="badge-dot"></span> Neu in Hamburg &amp; Schleswig-Holstein</div>
+      <h1>Verbindung zwischen<br>Mensch und <em>Handwerk.</em></h1>
+      <p class="lead">Ligavo ist der regionale Marktplatz, der Bauherren mit dem passenden Handwerksbetrieb zusammenbringt — vom ersten Anliegen bis zum fertigen Kostenvoranschlag. Fair, transparent und ohne Streuverluste.</p>
+      <div class="hero-ctas">
+        <a href="#einstieg" class="btn btn-primary">Betrieb kostenlos anmelden</a>
+        <a href="#bauherren" class="btn btn-ghost">
+          Ich suche einen Handwerker
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><b>3&nbsp;%</b><span>Erfolgsprovision — sonst nichts</span></div>
+        <div class="hero-stat"><b>0&nbsp;€</b><span>Vorkosten &amp; Abo</span></div>
+        <div class="hero-stat"><b>10&nbsp;Min.</b><span>bis zum fertigen Angebot</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal in">
+      <div class="hv-float hv-float-1">
+        <div class="hv-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <div><span class="hv-float-label">Neue Anfrage</span><b>Bad sanieren</b></div>
+      </div>
+
+      <div class="hv-main">
+        <span class="hv-eyebrow">Neue Anfrage · Altona</span>
+        <h4>Bad sanieren</h4>
+        <div class="hv-row"><span>Fliesen erneuern</span><b>2.400&nbsp;€</b></div>
+        <div class="hv-row"><span>Sanitär-Montage</span><b>1.850&nbsp;€</b></div>
+        <button class="hv-cta">Angebot versenden</button>
+      </div>
+
+      <div class="hv-float hv-float-2">
+        <div class="hv-icon" style="background:rgba(255,229,120,.18);color:var(--yellow-dark);">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        </div>
+        <div><span class="hv-float-label">Auftrag</span><b>abgeschlossen — 9 Tage</b></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-marquee">
+    <div class="container">
+      <span><span>●</span> Nur Erfolgsprovision</span>
+      <span><span>●</span> Keine Fixgebühr</span>
+      <span><span>●</span> Kein Bieterkrieg</span>
+      <span><span>●</span> Nur geprüfte Betriebe</span>
+      <span><span>●</span> Region zuerst</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PROBLEM ============================== -->
+<section id="problem">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Die Ausgangslage</span>
+      <h2>Ihr Handwerk ist erstklassig. Ihre Auftragslage auch?</h2>
+      <p>Volle Auftragsbücher und Leerlauf wechseln sich ab. Die Akquise frisst Zeit, die im Betrieb an allen Ecken fehlt. Drei Punkte, die fast jeder Betrieb kennt:</p>
+    </div>
+
+    <div class="problem-grid">
+      <div class="problem-card reveal">
+        <span class="problem-num">01</span>
+        <h3>Schwankende Auftragslage</h3>
+        <p>Mal zu viel, mal zu wenig — planbar ist das selten. Gerade in ruhigen Phasen fehlt der schnelle Zugang zu neuen Aufträgen.</p>
+      </div>
+      <div class="problem-card reveal">
+        <span class="problem-num">02</span>
+        <h3>Akquise kostet Zeit</h3>
+        <p>Angebote schreiben, Anfragen sortieren, hinterhertelefonieren — Arbeit, die abends und am Wochenende liegen bleibt.</p>
+      </div>
+      <div class="problem-card reveal">
+        <span class="problem-num">03</span>
+        <h3>Unpassende Anfragen</h3>
+        <p>Viele Kontakte passen nicht zum Gewerk, zur Region oder zum Budget. Das frustriert und bindet Ressourcen.</p>
+      </div>
+    </div>
+
+    <div class="problem-note reveal">
+      <p style="margin:0;">Die Folge: Betriebe zahlen entweder mit <b>Zeit</b> oder mit <b>Geld</b> — oft mit beidem. Genau hier setzt Ligavo an.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== SO FUNKTIONIERT'S ============================== -->
+<section id="funktioniert" style="background:var(--cream-2);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">So funktioniert's</span>
+      <h2>Für jede Seite die passende Verbindung.</h2>
+      <p>Ob Handwerksbetrieb oder Bauherr — Ligavo führt strukturierte Anfragen und passende Angebote in wenigen Schritten zusammen.</p>
+    </div>
+
+    <div class="tabs-head reveal">
+      <button class="tab-btn active" data-tab="betriebe">Für Handwerksbetriebe</button>
+      <button class="tab-btn" data-tab="bauherren">Für Bauherren</button>
+    </div>
+
+    <div class="tab-panel active" id="tab-betriebe">
+      <div class="steps reveal">
+        <div class="step-card">
+          <span class="step-index">1</span>
+          <h4>Kostenlos registrieren</h4>
+          <p>Betrieb anlegen, Gewerk und Einzugsgebiet angeben — in wenigen Minuten.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-index">2</span>
+          <h4>Profil schärfen</h4>
+          <p>Leistungen, Referenzen und Kapazität hinterlegen, damit nur passende Anfragen kommen.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-index">3</span>
+          <h4>Anfragen erhalten</h4>
+          <p>Passende Bauherren-Anfragen aus Ihrer Region landen direkt in Ihrer Inbox.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-index">4</span>
+          <h4>Auftrag gewinnen</h4>
+          <p>Angebot abgeben, Auftrag erhalten — erst dann fällt die Provision von 3&nbsp;% an.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="tab-bauherren">
+      <div class="steps steps-3 reveal">
+        <div class="step-card">
+          <span class="step-index">1</span>
+          <h4>Anliegen schildern</h4>
+          <p>Projekt kurz beschreiben, Fotos ergänzen, Budget und Wunschtermin angeben.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-index">2</span>
+          <h4>Passende Betriebe erhalten</h4>
+          <p>Ihre Anfrage geht an geprüfte Handwerksbetriebe aus Ihrer Region, die wirklich verfügbar sind.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-index">3</span>
+          <h4>Angebot vergleichen &amp; beauftragen</h4>
+          <p>Sie erhalten strukturierte Kostenvoranschläge und entscheiden in Ruhe.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FEATURES ============================== -->
+<section id="betriebe">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Das Produkt</span>
+      <h2>Weniger Aufwand. Mehr Übersicht.</h2>
+      <p>Anfragen-Inbox, Angebots-Generator und Kapazitätskalender bündeln Akquise und Angebot an einem Ort — fertig in Minuten statt Stunden.</p>
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h4>Anfragen-Inbox</h4>
+        <p>Alle Anfragen gebündelt an einem Ort, statt verstreut über Telefon, Mail und Zettel.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/><line x1="9" y1="11" x2="12" y2="11"/></svg>
+        </div>
+        <h4>Angebots-Generator</h4>
+        <p>Strukturierte Anfragen rein, fertiger Kostenvoranschlag raus — in Minuten statt Stunden.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <h4>Kapazitätskalender</h4>
+        <p>Sie nehmen nur Anfragen an, wenn Sie auch wirklich Kapazität haben.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+        </div>
+        <h4>Bewertungen &amp; Profil</h4>
+        <p>Zufriedene Kunden machen Ihren Betrieb für die nächsten Bauherren sichtbar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PRICING ============================== -->
+<section id="preismodell" style="background:var(--cream-2);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Das Preismodell</span>
+      <h2>Ein Marktplatz, der erst verdient, wenn Sie verdienen.</h2>
+      <p>Keine Fixgebühr, kein Abo, keine Vorkosten. Sie zahlen nur, wenn aus einer vermittelten Anfrage ein echter Auftrag wird.</p>
+    </div>
+
+    <div class="pricing-wrap">
+      <div class="pricing-table reveal">
+        <div class="pricing-row">
+          <span class="label">Was Sie zahlen</span>
+          <span class="value">Eine Erfolgsprovision von <b>3&nbsp;%</b> auf den Auftragswert.</span>
+        </div>
+        <div class="pricing-row">
+          <span class="label">Wann Sie zahlen</span>
+          <span class="value">Erst wenn ein über Ligavo vermittelter Auftrag bestätigt und beauftragt ist.</span>
+        </div>
+        <div class="pricing-row">
+          <span class="label">Was kostenlos ist</span>
+          <span class="value">Registrierung, Profil und Anfragen ansehen. Kein Abo, keine Fixgebühr zum Start.</span>
+        </div>
+        <div class="pricing-row">
+          <span class="label">Ihr Risiko</span>
+          <span class="value">Keines. Bringt Ligavo keinen Auftrag, zahlen Sie nichts.</span>
+        </div>
+      </div>
+
+      <div class="pricing-example reveal">
+        <span class="eyebrow">Zum Vergleich</span>
+        <h3>Bei einem Auftrag über 10.000&nbsp;€</h3>
+        <div class="pricing-big"><b>300&nbsp;€</b><span>Provision — fällig erst, wenn der Auftrag bei Ihnen liegt</span></div>
+        <p>Kein Bezahlen pro Anfrage, keine Bieterschlacht und nicht dieselbe Anfrage an fünf Betriebe gleichzeitig — anders als bei klassischen Lead-Portalen.</p>
+        <a href="#einstieg" class="btn btn-primary">Jetzt kostenlos registrieren</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== ÜBER UNS ============================== -->
+<section id="ueber-uns">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Über uns</span>
+      <h2>Gebaut von einem kleinen Team aus Hamburg &amp; Schleswig-Holstein.</h2>
+      <p>Wir entwickeln Ligavo im engen Austausch mit Handwerksbetrieben aus Hamburg, Lübeck und Flensburg — aus echten Gesprächen darüber, was Akquise heute so aufwendig macht. Unsere Grundwerte: Vertrauen, Transparenz, Einfachheit, Regionalität und Fairness.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CTA / EINSTIEG ============================== -->
+<section class="cta-section" id="einstieg">
+  <div class="container cta-wrap">
+    <div class="cta-copy reveal">
+      <span class="eyebrow">Der Einstieg</span>
+      <h2>Werden Sie Gründungspartner in Ihrer Region.</h2>
+      <p>Wir starten je Region mit einer begrenzten Zahl an Betrieben — die ersten sichern sich die meisten Anfragen. Jetzt kostenlos registrieren: keine Vertragsbindung, jederzeit kündbar, kein Risiko.</p>
+      <div id="bauherren" class="contact-line">
+        Sie suchen einen Handwerksbetrieb? Schreiben Sie uns: <a href="mailto:info@ligavo.de">info@ligavo.de</a><br>
+        Sie sind ein Handwerksbetrieb? <a href="mailto:betriebe@ligavo.de">betriebe@ligavo.de</a>
+      </div>
+    </div>
+
+    <form class="signup-form reveal" id="signupForm">
+      <div class="form-success" id="formSuccess">Ihr E-Mail-Programm öffnet sich gleich mit einer vorausgefüllten Nachricht an uns.</div>
+      <div class="field">
+        <label>Ich bin</label>
+        <div class="role-toggle">
+          <input type="radio" name="role" id="roleBetrieb" value="Handwerksbetrieb" checked>
+          <label for="roleBetrieb">Handwerksbetrieb</label>
+          <input type="radio" name="role" id="roleBauherr" value="Bauherr">
+          <label for="roleBauherr">Bauherr</label>
+        </div>
+      </div>
+      <div class="field">
+        <label for="fName">Name</label>
+        <input type="text" id="fName" name="name" required placeholder="Vor- und Nachname">
+      </div>
+      <div class="field">
+        <label for="fCompany">Betrieb / Gewerk (optional)</label>
+        <input type="text" id="fCompany" name="company" placeholder="z. B. Fliesenlegermeister Müller">
+      </div>
+      <div class="field">
+        <label for="fEmail">E-Mail</label>
+        <input type="email" id="fEmail" name="email" required placeholder="name@beispiel.de">
+      </div>
+      <div class="field">
+        <label for="fMessage">Nachricht (optional)</label>
+        <textarea id="fMessage" name="message" rows="3" placeholder="Region, Anliegen, Fragen …"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Interesse senden</button>
+      <p class="form-note">Wir antworten meist innerhalb eines Werktages.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============================== FOOTER ============================== -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/logo-lockup-yellow.png" alt="Ligavo">
+        <p>Ligavo — Handwerk, das zusammenfindet. Der regionale Marktplatz für Bauherren und Handwerksbetriebe.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Produkt</h5>
+        <ul>
+          <li><a href="#funktioniert">So funktioniert's</a></li>
+          <li><a href="#betriebe">Für Handwerksbetriebe</a></li>
+          <li><a href="#preismodell">Preismodell</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Unternehmen</h5>
+        <ul>
+          <li><a href="#ueber-uns">Über uns</a></li>
+          <li><a href="#einstieg">Kontakt</a></li>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Kontakt</h5>
+        <ul>
+          <li><a href="mailto:info@ligavo.de">info@ligavo.de</a></li>
+          <li><a href="mailto:betriebe@ligavo.de">betriebe@ligavo.de</a></li>
+          <li>Hamburg · Schleswig-Holstein</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ligavo · Hamburg · Schleswig-Holstein</span>
+      <div class="legal-links">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
