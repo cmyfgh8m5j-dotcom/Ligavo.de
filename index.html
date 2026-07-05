@@ -44,6 +44,10 @@
 
 <!-- ============================== HERO ============================== -->
 <section class="hero" id="top">
+  <svg class="hero-lines" viewBox="0 0 1440 800" preserveAspectRatio="none" aria-hidden="true">
+    <line x1="-100" y1="700" x2="900" y2="-100" stroke="#c9633f" stroke-width="1.5" stroke-dasharray="2 10" stroke-linecap="round"/>
+    <line x1="300" y1="900" x2="1600" y2="-50" stroke="#8a9a6b" stroke-width="1.5" stroke-dasharray="2 10" stroke-linecap="round"/>
+  </svg>
   <div class="container hero-grid">
     <div class="hero-copy reveal in">
       <div class="badge badge-dark hero-badge"><span class="badge-dot"></span> Neu in Hamburg &amp; Schleswig-Holstein</div>
@@ -95,6 +99,35 @@
       <span><span>●</span> Kein Bieterkrieg</span>
       <span><span>●</span> Nur geprüfte Betriebe</span>
       <span><span>●</span> Region zuerst</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== LIVE DEMO CHAT ============================== -->
+<section id="demo" class="demo-section">
+  <svg class="hero-lines" viewBox="0 0 1440 800" preserveAspectRatio="none" aria-hidden="true">
+    <line x1="-100" y1="100" x2="700" y2="900" stroke="#c9633f" stroke-width="1.5" stroke-dasharray="2 10" stroke-linecap="round"/>
+  </svg>
+  <div class="container">
+    <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+      <span class="eyebrow">Live-Demo</span>
+      <h2 style="color:var(--cream);">Vom ersten Anliegen zum passenden Betrieb.</h2>
+      <p style="color:var(--cream-muted);">So läuft eine echte Anfrage über den Ligavo-Assistenten ab — automatisch nachgespielt.</p>
+    </div>
+
+    <div class="demo-chat-wrap reveal">
+      <div class="demo-chat">
+        <div class="demo-chat-head">
+          <div class="demo-chat-avatar">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 3.2v2.1M12 18.7v2.1M4.9 4.9l1.5 1.5M17.6 17.6l1.5 1.5M3.2 12h2.1M18.7 12h2.1M4.9 19.1l1.5-1.5M17.6 6.4l1.5-1.5"/></svg>
+          </div>
+          <div>
+            <b>Ligavo-Assistent</b>
+            <span class="demo-chat-status"><i></i> online</span>
+          </div>
+        </div>
+        <div class="demo-chat-body" id="demoChatBody"></div>
+      </div>
     </div>
   </div>
 </section>
