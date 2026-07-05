@@ -454,6 +454,9 @@ footer{background:var(--green-950);color:var(--cream-muted);padding:72px 0 30px;
 .demo-chat-wrap{
   width:100%;max-width:600px;margin:0 auto;position:relative;
   display:flex;flex-direction:column;gap:20px;
+  background:rgba(17,31,25,.55);backdrop-filter:blur(10px);
+  border:1px solid var(--border-dark);border-radius:var(--radius-lg);
+  padding:26px 28px 30px;box-shadow:var(--shadow-lg);
 }
 .demo-chat-head{
   display:flex;align-items:center;gap:12px;align-self:center;
