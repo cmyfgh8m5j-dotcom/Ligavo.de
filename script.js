@@ -133,7 +133,7 @@ if (demoBody) {
     await sleep(600);
     if (runId !== demoRunId) return;
 
-    await botSay(runId, 'Verstanden — <b>Sanitär &amp; Fliesen</b>. Wie groß ist die Fläche ungefähr?');
+    await botSay(runId, 'Verstanden – <b>Sanitär &amp; Fliesen</b>. Wie groß ist die Fläche ungefähr?');
     if (runId !== demoRunId) return;
     await userPickChip(runId, ['unter 10 m²', '10 – 30 m²', 'über 30 m²'], 1);
     if (runId !== demoRunId) return;
@@ -145,7 +145,7 @@ if (demoBody) {
     await sleep(600);
     if (runId !== demoRunId) return;
 
-    await botSay(runId, 'Perfekt — ich suche passende, geprüfte Betriebe in Ihrer Nähe …', 1200);
+    await botSay(runId, 'Perfekt – ich suche passende, geprüfte Betriebe in Ihrer Nähe …', 1200);
     if (runId !== demoRunId) return;
     await addResultCard(runId);
     await sleep(4200);
@@ -185,7 +185,7 @@ if (signupForm) {
     const message = signupForm.fMessage.value.trim();
 
     const to = 'info@ligavo.de';
-    const subject = `Interesse als ${role} — ${name}`;
+    const subject = `Interesse als ${role} – ${name}`;
     const bodyLines = [
       `Ich bin: ${role}`,
       `Name: ${name}`,
