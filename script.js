@@ -173,7 +173,7 @@ if (demoBody) {
   demoObserver.observe(demoBody.closest('.demo-chat-wrap'));
 }
 
-// Signup form -> mailto (no backend yet)
+// Signup form -> real submission via FormSubmit, lands at info@ligavo.de
 const signupForm = document.getElementById('signupForm');
 if (signupForm) {
   const fCompanyField = document.getElementById('fCompanyField');
@@ -184,27 +184,7 @@ if (signupForm) {
   signupForm.querySelectorAll('input[name="role"]').forEach((r) => r.addEventListener('change', toggleCompanyField));
   toggleCompanyField();
 
-  signupForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const role = signupForm.querySelector('input[name="role"]:checked').value;
-    const name = signupForm.fName.value.trim();
-    const company = signupForm.fCompany.value.trim();
-    const email = signupForm.fEmail.value.trim();
-    const message = signupForm.fMessage.value.trim();
-
-    const to = 'info@ligavo.de';
-    const subject = `Interesse als ${role} – ${name}`;
-    const bodyLines = [
-      `Ich bin: ${role}`,
-      `Name: ${name}`,
-      company ? `Betrieb / Gewerk: ${company}` : null,
-      `E-Mail: ${email}`,
-      message ? `Nachricht: ${message}` : null
-    ].filter(Boolean);
-    const body = bodyLines.join('\n');
-
-    const mailto = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  signupForm.addEventListener('submit', () => {
     document.getElementById('formSuccess').style.display = 'block';
-    window.location.href = mailto;
   });
 }

@@ -385,8 +385,13 @@
       </div>
     </div>
 
-    <form class="signup-form reveal" id="signupForm">
-      <div class="form-success" id="formSuccess">Ihr E-Mail-Programm öffnet sich gleich mit einer vorausgefüllten Nachricht an uns.</div>
+    <form class="signup-form reveal" id="signupForm" action="https://formsubmit.co/info@ligavo.de" method="POST">
+      <input type="hidden" name="_subject" value="Neue Anfrage über ligavo.de">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://ligavo.de/danke.html">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <div class="form-success" id="formSuccess">Danke! Ihre Anfrage wird gerade gesendet …</div>
       <div class="field">
         <label>Ich bin</label>
         <div class="role-toggle">
