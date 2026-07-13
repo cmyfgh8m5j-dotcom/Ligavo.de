@@ -185,6 +185,22 @@ if (signupForm) {
   toggleCompanyField();
 
   signupForm.addEventListener('submit', () => {
+    const fNext = document.getElementById('fNext');
+    fNext.value = window.location.origin + '/index.html?sent=1';
     document.getElementById('formSuccess').style.display = 'block';
   });
+}
+
+// Show a success banner after a redirected form submission (?sent=1), then clean the URL
+if (new URLSearchParams(window.location.search).get('sent') === '1') {
+  const banner = document.createElement('div');
+  banner.className = 'sent-banner';
+  banner.innerHTML = '<span>✓ Danke! Ihre Anfrage wurde erfolgreich gesendet.</span>';
+  document.body.prepend(banner);
+  window.history.replaceState({}, '', window.location.pathname);
+  setTimeout(() => banner.classList.add('show'), 30);
+  setTimeout(() => {
+    banner.classList.remove('show');
+    setTimeout(() => banner.remove(), 400);
+  }, 5000);
 }
