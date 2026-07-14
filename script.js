@@ -173,8 +173,9 @@ if (demoBody) {
   demoObserver.observe(demoBody.closest('.demo-chat-wrap'));
 }
 
-// Signup form -> real submission via FormSubmit (email to info@ligavo.de)
-// plus a fire-and-forget log to the Ligavo Google Sheet via Apps Script.
+// Signup form -> single reliable endpoint (Google Apps Script): logs to the
+// Sheet, emails info@ligavo.de, and auto-replies to the submitter.
+// (FormSubmit was dropped after repeated outages/timeouts.)
 const SHEET_LOG_URL = 'https://script.google.com/macros/s/AKfycbyOvmOKiioxBy0Ows58uocVSAr1QUVqcIXWGqHh6FyYYz_mqKE3OnI2quj8kSKY_pKbww/exec';
 const signupForm = document.getElementById('signupForm');
 if (signupForm) {
@@ -186,18 +187,23 @@ if (signupForm) {
   signupForm.querySelectorAll('input[name="role"]').forEach((r) => r.addEventListener('change', toggleCompanyField));
   toggleCompanyField();
 
-  signupForm.addEventListener('submit', () => {
-    const fNext = document.getElementById('fNext');
-    fNext.value = window.location.origin + '/index.html?sent=1';
+  signupForm.addEventListener('submit', (e) => {
+    e.preventDefault();
     document.getElementById('formSuccess').style.display = 'block';
 
     const data = new FormData(signupForm);
     const params = new URLSearchParams();
-    ['role', 'name', 'company', 'email', 'message'].forEach((key) => params.append(key, data.get(key) || ''));
-    const queued = navigator.sendBeacon && navigator.sendBeacon(SHEET_LOG_URL, params);
-    if (!queued) {
-      fetch(SHEET_LOG_URL, { method: 'POST', mode: 'no-cors', keepalive: true, body: params }).catch(() => {});
-    }
+    ['role', 'name', 'company', 'email', 'message', '_honey'].forEach((key) => params.append(key, data.get(key) || ''));
+
+    const goToThanks = () => {
+      window.location.href = window.location.origin + '/index.html?sent=1';
+    };
+    // Never let the user get stuck: redirect after the request settles,
+    // or after 6s regardless (Apps Script is fast, but this is a safety net).
+    const safety = setTimeout(goToThanks, 6000);
+    fetch(SHEET_LOG_URL, { method: 'POST', body: params })
+      .catch(() => {})
+      .finally(() => { clearTimeout(safety); goToThanks(); });
   });
 }
 
