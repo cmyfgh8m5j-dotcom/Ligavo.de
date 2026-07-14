@@ -195,15 +195,19 @@ if (signupForm) {
     const params = new URLSearchParams();
     ['role', 'name', 'company', 'email', 'message', '_honey'].forEach((key) => params.append(key, data.get(key) || ''));
 
-    const goToThanks = () => {
+    // Fire-and-forget: don't read the response (Apps Script's cross-origin
+    // redirect makes awaiting fetch() unreliable). The script runs server-side
+    // regardless of whether we read its reply.
+    const queued = navigator.sendBeacon && navigator.sendBeacon(SHEET_LOG_URL, params);
+    if (!queued) {
+      fetch(SHEET_LOG_URL, { method: 'POST', mode: 'no-cors', keepalive: true, body: params }).catch(() => {});
+    }
+
+    // Redirect ourselves after a short, fixed delay - never depends on the
+    // request settling, so the page can never get stuck showing "wird gesendet".
+    setTimeout(() => {
       window.location.href = window.location.origin + '/index.html?sent=1';
-    };
-    // Never let the user get stuck: redirect after the request settles,
-    // or after 6s regardless (Apps Script is fast, but this is a safety net).
-    const safety = setTimeout(goToThanks, 6000);
-    fetch(SHEET_LOG_URL, { method: 'POST', body: params })
-      .catch(() => {})
-      .finally(() => { clearTimeout(safety); goToThanks(); });
+    }, 900);
   });
 }
 
